@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 import utils.graphs as graphs
-from utils.constants import TARGETS, DISCRETE, FIG_DIR, REPORT_DIR
+from utils.constants import TARGETS, DISCRETE, FIG_DIR
 
 def univariate_analysis(df: pd.DataFrame, generate_output: bool = True, verbose: bool = True) -> None:
     """
