@@ -4,28 +4,18 @@ import pandas as pd
 
 class DataLoader:
     """
-    
+
     """
 
     def __init__(self, data_dir: Union[str, Path] = "data"):
         """
-        Initializes the DataLoader.
-        Args:
-            data_dir (str): The directory key where data files are located.
+
         """
         self.data_load_path = Path(data_dir)
 
     def load_data(self, filename: str = "data") -> pd.DataFrame:
         """
-        Load data from a specified CSV file.
 
-        Args:
-            filename (str): The name of the CSV file to load (without extension).
-        Returns:
-            pd.DataFrame
-        Raises:
-            FileNotFoundError: If the specified CSV file does not exist.
-            ValueError: If there are issues loading the CSV or empty data.
         """
         filepath = self.data_load_path / f"{filename}.csv"
         if not filepath.exists():

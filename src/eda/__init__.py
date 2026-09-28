@@ -1,0 +1,3 @@
+from eda.overview import overview
+from eda.univariante_analysis import univariate_analysis
+from eda.bivariante_analysis import bivariante_analysis
