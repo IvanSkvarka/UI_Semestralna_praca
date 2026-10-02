@@ -19,14 +19,14 @@ class DataLoader:
         """
         filepath = self.data_load_path / f"{filename}.csv"
         if not filepath.exists():
-            raise FileNotFoundError(f"File '{filepath}' not found")
+            raise FileNotFoundError(f"File '{filepath}' not found.")
 
         try:
             data = pd.read_csv(filepath)
         except Exception as e:
-            raise ValueError(f"Error loading CSV file '{filepath}': {e}")
+            raise ValueError(f"Error loading CSV file '{filepath}': {e}.")
 
         if data.empty:
-            raise ValueError(f"File '{filepath}' is empty or contains no data")
+            raise ValueError(f"File '{filepath}' is empty or contains no data.")
 
         return data
