@@ -1,0 +1,14 @@
+{
+    "target": "epsilon_p50",
+    "threshold": 0.95,
+    "correlated_pairs": [
+        "reactor_diameter <-> bottom_depth: 1.000",
+        "reactor_diameter <-> diameter_impeller_1: 1.000",
+        "reactor_diameter <-> axPos_impeller_1: 1.000",
+        "bottom_depth <-> diameter_impeller_1: 1.000",
+        "bottom_depth <-> axPos_impeller_1: 1.000",
+        "n_impeller <-> pitch_angle_2: 0.971",
+        "diameter_impeller_1 <-> axPos_impeller_1: 1.000",
+        "diameter_impeller_2 <-> axPos_impeller_2: 1.000"
+    ]
+}

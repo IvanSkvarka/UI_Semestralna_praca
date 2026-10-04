@@ -1,3 +1,5 @@
+import eda.common as eda_common
+import eda.plots as eda_plots
 from eda.overview import overview
-from eda.univariante_analysis import univariate_analysis
-from eda.bivariante_analysis import bivariante_analysis
+from eda.relationships import relationships
+from eda.design import design

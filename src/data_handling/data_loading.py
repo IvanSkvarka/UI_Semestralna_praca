@@ -2,7 +2,9 @@ from pathlib import Path
 from typing import Union
 import pandas as pd
 
-class DataLoader:
+from data_handling.data_handling import DataHandler
+
+class DataLoader(DataHandler):
     """
 
     """
@@ -11,13 +13,14 @@ class DataLoader:
         """
 
         """
-        self.data_load_path = Path(data_dir)
+        super().__init__(data_dir)
+
 
     def load_data(self, filename: str = "data") -> pd.DataFrame:
         """
 
         """
-        filepath = self.data_load_path / f"{filename}.csv"
+        filepath = self.folder / f"{filename}.csv"
         if not filepath.exists():
             raise FileNotFoundError(f"File '{filepath}' not found.")
 

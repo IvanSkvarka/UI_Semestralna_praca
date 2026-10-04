@@ -1,0 +1,35 @@
+{
+    "rows_raw": 768,
+    "columns_raw": 24,
+    "non_numeric_cols": [],
+    "missing_total": 0,
+    "constant_cols": [
+        "n_blades_1",
+        "pitch_angle_1",
+        "diameter_impeller_3",
+        "axPos_impeller_3",
+        "n_blades_3",
+        "pitch_angle_3",
+        "n_diptubes",
+        "n_baffles"
+    ],
+    "identical_rows": 1,
+    "rows_clean": 768,
+    "columns_clean": 16,
+    "discrete_inputs": [
+        "n_impeller"
+    ],
+    "continuous_inputs": [
+        "volume",
+        "reactor_diameter",
+        "liquid_height",
+        "bottom_depth",
+        "diameter_impeller_1",
+        "axPos_impeller_1",
+        "diameter_impeller_2",
+        "axPos_impeller_2",
+        "n_blades_2",
+        "pitch_angle_2",
+        "rpm"
+    ]
+}

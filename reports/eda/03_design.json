@@ -1,0 +1,7 @@
+{
+    "unique_configs": 552,
+    "repeated_configs": 56,
+    "families": 138,
+    "vary_col": "rpm",
+    "r2_ceiling_log10": 0.991
+}
